@@ -1,5 +1,7 @@
-package com.example.Note;
+package com.example.Note.services.impl;
 
+import com.example.Note.Note;
+import com.example.Note.services.NoteService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -8,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public class NoteService {
+public class NoteServiceImpl implements NoteService {
     Map<Long, Note> noteMap = new HashMap<>();
     Long id = 0L;
     public List<Note> listAll() {
